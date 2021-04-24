@@ -1,0 +1,69 @@
+Client 1 connected, processing file image1, at Fri Mar 12 23:49:28 2021
+Start to recieve image
+Image Received
+Client 2 connected, processing file image2, at Fri Mar 12 23:50:55 2021
+Start to recieve image
+Image Received
+Client 3 connected, processing file image3, at Fri Mar 12 23:50:57 2021
+Start to recieve image
+Process command Received
+Images Sorted
+Star processing all images...
+Star classify Image: image1.png
+Applying Average Filter to Image: image1.png
+Applying Median Filter to Image: image1.png
+Star classify Image: image2.png
+Applying Average Filter to Image: image2.png
+Applying Median Filter to Image: image2.png
+Finished processing all images
+Cleaning....
+----------------
+Image Received
+Client 4 connected, processing file image4, at Fri Mar 12 23:52:11 2021
+Start to recieve image
+Image Received
+Client 5 connected, processing file image5, at Fri Mar 12 23:52:12 2021
+Start to recieve image
+Process command Received
+Images Sorted
+Star processing all images...
+Star classify Image: image4.png
+Applying Average Filter to Image: image4.png
+Applying Median Filter to Image: image4.png
+Finished processing all images
+Cleaning....
+----------------
+Image Received
+Client 6 connected, processing file image6, at Fri Mar 12 23:52:56 2021
+Start to recieve image
+Image Received
+Client 1 connected, processing file image1, at Sat Mar 13 11:10:20 2021
+Start to recieve image
+Image Received
+Client 2 connected, processing file image2, at Sat Mar 13 11:10:28 2021
+Start to recieve image
+Process command Received
+Images Sorted
+Star processing all images...
+Star classify Image: image1.png
+Applying Average Filter to Image: image1.png
+Applying Median Filter to Image: image1.png
+Finished processing all images
+Cleaning....
+----------------
+Image Received
+Client 3 connected, processing file image3, at Sat Mar 13 11:12:07 2021
+Start to recieve image
+Image Received
+Client 4 connected, processing file image4, at Sat Mar 13 11:12:08 2021
+Start to recieve image
+Process command Received
+Images Sorted
+Star processing all images...
+Star classify Image: image3.png
+Applying Average Filter to Image: image3.png
+Applying Median Filter to Image: image3.png
+Finished processing all images
+Cleaning....
+----------------
+Image Received

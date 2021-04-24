@@ -1,0 +1,63 @@
+input[type=text], select {
+    width: 200px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  div {
+    position: center;
+    border-radius: 5px;
+    background-color:white;
+    padding: 20px;
+  }
+
+  .image-preview{
+
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid #dddddd;
+    margin-top: 30px;
+
+
+    /* Default text*/
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+  }
+
+  .image-preview__image{
+    display: none;
+    width: 100%;
+  }
+
+  .custom-button{
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+  }
+
+  .custom-button:hover{
+    background-color: #00b28f;
+  }
+
+  .custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+  }
+
+  .center{
+    position: center;
+    text-align: center;
+  }

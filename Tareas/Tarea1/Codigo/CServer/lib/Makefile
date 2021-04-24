@@ -1,0 +1,39 @@
+.PHONY: clean all
+
+APP_UTILITIES=libutilities
+LIB_UTILITIES=utilities
+OBJ_UTILITIES=$(LIB_UTILITIES).o
+SRC_UTILITIES=$(LIB_UTILITIES).c
+UTILITIES=$(APP_UTILITIES).a
+INCLUDE_UTILITIES=../include/utilities.h
+
+APP_IMAGES=libimages
+LIB_IMAGES=images
+OBJ_IMAGES=$(LIB_IMAGES).o
+SRC_IMAGES=$(LIB_IMAGES).c
+IMAGES=$(APP_IMAGES).a
+INCLUDE_IMAGES=../include/images.h
+
+CC=gcc
+MAKELIB=ar rv
+RANLIB=ranlib
+FLAGS=`pkg-config --cflags --libs MagickWand`
+
+all: $(UTILITIES) $(IMAGES) clean
+
+$(UTILITIES): $(OBJ_UTILITIES)
+		$(MAKELIB) $(UTILITIES) $(OBJ_UTILITIES) && $(RANLIB) $(UTILITIES)
+
+
+$(OBJ_UTILITIES): $(SRC_UTILITIES) $(INCLUDE_UTILITIES)
+		$(CC) -c $(SRC_UTILITIES)
+
+$(IMAGES): $(OBJ_IMAGES)
+		$(MAKELIB) $(IMAGES) $(OBJ_IMAGES) && $(RANLIB) $(IMAGES)
+
+
+$(OBJ_IMAGES): $(SRC_IMAGES) $(INCLUDE_IMAGES)
+		$(CC) -c $(SRC_IMAGES) $(FLAGS)
+
+clean:
+		rm  *.o
