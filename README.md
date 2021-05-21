@@ -15,6 +15,6 @@ _Las intrucciones necesarias para cada caso de implementacion se encuentran en s
 
 ## Autores ✒️
 
-* **Emanuel Esquiel Lopez** - *Trabajo Inicial* - [ema11412](https://github.com/ema11412)
+* **Emanuel Esquivel Lopez** - *Trabajo Inicial* - [ema11412](https://github.com/ema11412)
 
 
