@@ -1,0 +1,5 @@
+1. descomprime el zip
+2. cd a la carpeta
+3. ./configure
+4. make
+5. sudo make install
