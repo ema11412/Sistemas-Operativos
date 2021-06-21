@@ -1,0 +1,71 @@
+.main {
+  text-align: center;
+  display: block;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/*.color-with-marker {*/
+/*  list-style-position: inside;*/
+/*}*/
+/*.color-with-marker ::marker {*/
+/*  color: red;*/
+/*}*/
+
+.log-heading {
+  margin: 1em 0 0.5em 0;
+  color: #343434;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Orienta", sans-serif;
+}
+
+.container {
+  padding: 20px 12px 15px 12px;
+  width: 340px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.log-button {
+  background: #0AC26C;
+  width: 100%;
+}
+.log-button:hover {
+  background: #30F2AB;
+}
+
+.label-form {
+  font-family: "Orienta", sans-serif;
+}
+
+.mat-form {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.side-nav-container {
+  width: 25%;
+  display: block;
+  text-align: center;
+}
+
+.main-nav {
+  display: flex;
+}

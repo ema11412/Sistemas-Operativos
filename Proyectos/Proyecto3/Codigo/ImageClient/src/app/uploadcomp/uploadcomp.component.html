@@ -1,0 +1,39 @@
+<label>
+  <input
+    type="file"
+    class="text-nowrap text-truncate"
+    (change)="selectFile($event)"
+  />
+</label>
+
+<button
+  class="btn btn-success btn-sm"
+  [disabled]="!selectedFiles"
+  (click)="upload()"
+>
+  Upload
+</button>
+
+<div *ngIf="currentFileUpload" class="progress mt-2">
+  <div
+    class="progress-bar progress-bar-info"
+    role="progressbar"
+    attr.aria-valuenow="{{ percentage }}"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    [ngStyle]="{ width: percentage + '%' }"
+  >
+    {{ percentage }}%
+  </div>
+</div>
+
+<div class="container">
+<mat-form-field appearance="fill" style="width: 100%; margin-top:15px">
+  <mat-label class="label-form">Llave para XOR</mat-label>
+  <input matInput type="number" [(ngModel)]="xor" required>
+</mat-form-field>
+<mat-form-field appearance="fill" style="width: 100%; margin-top:15px">
+  <mat-label class="label-form">Cantidad por imagen</mat-label>
+  <input matInput type="number" [(ngModel)]="times" required>
+</mat-form-field>
+</div>

@@ -1,0 +1,64 @@
+<ng-container>
+  <mat-toolbar class="main-nav" color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <span>Sistemas Operativos Proyecto 3</span>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" class="side-nav-container">
+      <h2>Configuración</h2>
+      <p><mat-form-field appearance="fill">
+        <mat-label>IP</mat-label>
+        <input matInput class="form-input" type="text" placeholder="Ex: 192.168.100.4" [(ngModel)]="ip" required>
+      </mat-form-field></p>
+      <p><mat-form-field appearance="fill">
+        <mat-label>Puerto</mat-label>
+        <input matInput type="text" [(ngModel)]="port" placeholder="Ex: 1717" required>
+      </mat-form-field></p>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="main">
+        <div style="display: inline-block; position:relative; width: 100%">
+          <img src="https://raw.githubusercontent.com/isaacbmt/SpaceInvadersC/master/resources/ImageClientLogo.png"
+               alt="ImageClient" width="15%">
+        </div>
+        <div style="display: inline-block">
+          <!--    <h2 class="log-heading" style="display: block; padding-left: 20px; padding-right: 20px;">Seleccione las imagenes al servidor</h2>-->
+          <div class="container">
+<!--            <mat-form-field appearance="fill" style="width: 100%">-->
+<!--              <mat-label class="label-form">Llave para XOR</mat-label>-->
+<!--              <input matInput [(ngModel)]="xor" [formControl]="user" required>-->
+<!--              <mat-error *ngIf="user.invalid">{{ getErrorUsername() }}</mat-error>-->
+<!--            </mat-form-field>-->
+<!--            <mat-form-field appearance="fill" style="width: 100%">-->
+<!--              <mat-label class="label-form">Cantidad por imagen</mat-label>-->
+<!--              <input matInput [(ngModel)]="times" [formControl]="user" required>-->
+<!--              <mat-error *ngIf="user.invalid">{{ getErrorUsername() }}</mat-error>-->
+<!--            </mat-form-field>-->
+<!--            <mat-form-field appearance="fill" style="width: 100%">-->
+<!--              <mat-label class="label-form">Seleccione una imagen: </mat-label>-->
+<!--              <ngx-mat-file-input [formControl]="fileControl" [multiple]="multiple" [accept]="accept" [color]="color">-->
+<!--              </ngx-mat-file-input>-->
+<!--            </mat-form-field>-->
+<!--            <h3 *ngIf="loading">Loading ...</h3>-->
+<!--            <mat-list>-->
+<!--              <div mat-subheader>Imagenes que se enviaran:</div>-->
+<!--              <mat-list-item *ngFor="let img of images" style="margin-bottom: 0; margin-top: 0; padding-bottom: 0; padding-top: 0; align-items: normal">-->
+<!--                <mat-icon mat-list-icon>photo</mat-icon>-->
+<!--                <div>{{ img.name }}</div>-->
+<!--              </mat-list-item>-->
+<!--            </mat-list>-->
+<!--            <button mat-flat-button (click)="sendImage()" color="accent" style="font-size: 16px; font-family: 'Orienta', sans-serif;">-->
+<!--              Enviar imagenes-->
+<!--            </button><br>-->
+<!--            <h3 *ngIf="sent" style="color: #31dd0b" class="label-form">Imagenes enviadas exitosamente!</h3>-->
+            <app-uploadcomp></app-uploadcomp>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>
